@@ -1,0 +1,12 @@
+flutter emulators --launch apple_ios_simulator
+open -a Simulator
+
+xcrun simctl list devicetypes | grep "iPhone 13"
+xcrun simctl list devices
+xcrun simctl boot "iPhone 13"
+flutter devices
+flutter emulators
+flutter run -d "iPhone 13"
+
+open -a Simulator
+flutter run
